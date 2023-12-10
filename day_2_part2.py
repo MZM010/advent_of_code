@@ -36,10 +36,9 @@ with open('input.txt', 'r') as file:
                 cube += 1
                 num, color = my_line.split(" ")
                 num = int(num)
-                max_blue = checkblue(num, color)
-                max_red = checkred(num, color)
-                max_green = checkgreen(num, color)
-        print(f"the max blue and red and green is {max_blue} {max_red} {max_green}")
+                checkblue(num, color)
+                checkred(num, color)
+                checkgreen(num, color) 
         power = MAX_GREEN * MAX_BLUE * MAX_RED
         counter += power
 print("the counter is :",counter)
